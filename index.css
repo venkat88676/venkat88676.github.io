@@ -1,0 +1,112 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:ital,wght@0,400;0,500;0,700;1,600&family=Ubuntu:wght@300;400&display=swap');
+
+  *{
+    /* background-image:url("./image/06b3FMA.jpg"); */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Ubuntu',sans-serif;
+  }
+  .max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+  }
+  #nav-menu{
+    position: sticky;
+    padding: 15px;
+    width:100%;
+    background: rgb(42, 38, 39);
+    
+  }
+  #nav-menu .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  a{
+    color: #ffff;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .logo{
+    color: #ffff;
+    font-size: 25px;
+    font-weight: 600;
+  }
+  #nav-menu .menu li{
+    padding-left: 10px;
+    list-style: none;
+    display: inline-block;
+  }
+  #nav-menu .menu li :hover{
+    color: crimson;
+  }
+ 
+  /* home section */
+  .photo img{
+    width: 300px;
+    border-radius:150px ;
+  
+  }
+  #home{
+    width: 75%;
+    margin: auto;
+  }
+  #about{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+
+  }
+  .text{
+    width: 50%;
+    /* border: solid red; */
+    font-size: 50px;
+    line-height: 80px;
+    /* text-align: center; */
+  }
+
+  .photo{
+    width: 50%;
+    /* border: solid red; */
+    text-align: center;
+  }
+
+  .container2{
+    display: flex;
+  }
+  .container2>div{
+    width: 50%;
+    margin: auto;
+  }
+  .box{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  }
+  .box>div{
+    padding: 15px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  }
+  #skills{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+  }
+  #skills img{
+    width: 100px;
+  }
+  .project img{
+    width: 500px;
+    border-radius: 10px;
+  }
+  .project{
+    display: flex;
+  }
+  .logo{
+    width: 70px;
+  }
