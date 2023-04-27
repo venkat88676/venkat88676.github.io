@@ -19,7 +19,7 @@
   <body>
     <div id="nav-menu">
       <div class="max-width">
-        <div class="logo">Portfo<span>lio</span></div>
+        <div class="logo">Venkat<span>esh</span></div>
         <ul class="menu">
           <li><a href="#">Home</a></li>
           <li><a href="#">About</a></li>
@@ -29,7 +29,7 @@
           <li><a href="#">Contact</a></li>
           <li>
             <a href="/doc/Venkatesh_Tiwari_Resume.pdf" download>
-              <button>
+              <button id="resume">
                 Resume
                 <span><ion-icon name="arrow-down-outline"></ion-icon></span>
               </button>
@@ -45,18 +45,24 @@
           <div class="text1">Hello I Am</div>
           <div id="user-details-name">Venkatesh Tiwari</div>
           <div id="user-details-intro">
-                <img
-                src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&pause=1000&color=000000&&width=500&lines=A+Full+Stack+Web+Developer"
-                alt="Typing SVG"
-               />
+            <img
+              src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&pause=1000&color=000000&&width=500&lines=A+Full+Stack+Web+Developer"
+              alt="Typing SVG"
+            />
           </div>
+          <a href="/doc/Venkatesh_Tiwari_Resume.pdf" download>
+            <button id="resume">
+              Resume
+              <span><ion-icon name="arrow-down-outline"></ion-icon></span>
+            </button>
+          </a>
         </div>
         <div class="photo">
-          <img src="./doc/pic-removebg-preview.png" alt="" />
+          <img src="./doc/pic.jpeg" alt="" />
         </div>
       </div>
       <div>
-        <h1>About Me</h1>
+        <h1 class="title">About Me</h1>
       </div>
       <div class="container2">
         <div>
@@ -67,12 +73,7 @@
             working in an organization that can challenge my abilities as a web
             developer.
           </p>
-          <a href="/doc/Venkatesh_Tiwari_Resume.pdf" download>
-            <button>
-              Resume
-              <span><ion-icon name="arrow-down-outline"></ion-icon></span>
-            </button>
-          </a>
+          
         </div>
         <div class="box">
           <div>
@@ -98,7 +99,7 @@
         </div>
       </div>
       <div>
-        <h1>Languages & Frameworks</h1>
+        <h1  class="title">Languages & Frameworks</h1>
         <div id="skills">
           <div>
             <img src="https://www.svgrepo.com/show/473654/html5.svg" alt="" />
@@ -134,14 +135,14 @@
         </div>
       </div>
       <div class="github">
-        <h1>Github Portfolio</h1>
+        <h1  class="title">Github Portfolio</h1>
         <div>
           <link
             rel="stylesheet"
             href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
           />
           <div class="calendar">Loading the data just for you.</div>
-          <script>
+          <!-- <script>
             GitHubCalendar(".calendar", "venkat88676");
             GitHubCalendar(".calendar", "venkat88676", { responsive: true });
             GitHubCalendar(".calendar", "venkat88676", {
@@ -151,7 +152,7 @@
                 );
               },
             }).then((r) => r.text());
-          </script>
+          </script> -->
         </div>
         <div>
           <img
@@ -173,7 +174,7 @@
         </div>
       </div>
       <div id="projects">
-        <h2>My Projects</h2>
+        <h2  class="title">My Projects</h2>
         <div class="project">
           <div>
             <img
@@ -222,16 +223,38 @@
           </div>
         </div>
       </div>
-      <div id="contact">
-        <h2>Contact Me</h2>
-        <div id="contact-phone"><h4>+91-7566992446</h4></div>
-        <div id="contact-email"><h4>venkat88676@gmail.com</h4></div>
-        <div id="contact-github"><a href="https://github.com/venkat88676"><img class="logo" src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt=""></a></div>
-        <div ><a href="https://www.instagram.com/"><img class="logo"src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt=""></a> </div>
-        <div id="contact-linkedin"><a href="https://www.linkedin.com/in/venkatesh-tiwari-80b361248/"><img class="logo" src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt=""></a></div>
-  
-  
     </div>
+    <div id="contact">  
+      <h2  class="title">Contact Me</h2>
+      <div id="socialMedia">
+        <div id="contact-phone">
+          <img class="logo" src="https://www.freeiconspng.com/thumbs/phone-icon/white-phone-icon-png--clipart-best-30.png" alt="">
+          <h4>+91-7566992446</h4>
+        </div>
+        <div id="contact-email">
+          <img class="logo" src="https://cdn-icons-png.flaticon.com/512/720/720277.png" alt="">
+          <h4>venkat88676@gmail.com</h4>
+        </div>      
+        <div id="contact-github">
+          <a href="https://github.com/venkat88676"
+            ><img
+              class="logo"
+              src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+              alt=""
+          /></a>
+          <h4>Github</h4>
+        </div>
+        <div id="contact-linkedin">
+          <a href="https://www.linkedin.com/in/venkatesh-tiwari-80b361248/"
+            ><img
+              class="logo"
+              src="https://cdn-icons-png.flaticon.com/512/174/174857.png"
+              alt=""
+          /></a>
+          <h4>linkedin</h4>
+        </div>
+      </div>
+        
     </div>
   </body>
 </html>

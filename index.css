@@ -21,6 +21,9 @@
     background: rgb(42, 38, 39);
     
   }
+  #resume{
+    padding: 5px;
+  }
   #nav-menu .max-width{
     display: flex;
     align-items: center;
@@ -57,21 +60,23 @@
     margin: auto;
   }
   #about{
-    margin-top: 30px;
+    margin: 95px 0 95px 0 ;
     display: flex;
     justify-content: space-around;
 
   }
   .text{
-    width: 50%;
+    width: 70%;
     /* border: solid red; */
-    font-size: 50px;
-    line-height: 80px;
+    font-size: 70px;
+    font-weight: 10;
+    line-height: 99px;
+    padding: 20px;
     /* text-align: center; */
   }
 
   .photo{
-    width: 50%;
+    width: 30%;
     /* border: solid red; */
     text-align: center;
   }
@@ -108,5 +113,34 @@
     display: flex;
   }
   .logo{
-    width: 70px;
+    width: 60px;
+
   }
+  #contact{ 
+    /* display: flex; */
+    margin-top: 20px;
+    padding: 10px;
+    background: rgb(56, 53, 55);
+    color: white;
+    line-height: 30px;
+  }
+
+  #socialMedia{
+    padding: 50px;
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+  }
+  .title{
+    /* width: 60%; */
+    /* margin: auto; */
+    font-size: 40px;
+    /* display: block; */
+    margin: 30px 0 30px 0;
+    line-height: 60px;
+    text-align: center;
+    border-bottom:solid #2d2b2bb5;    border-bottom-width: thin;
+  }
+ 
