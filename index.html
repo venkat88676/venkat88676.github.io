@@ -21,12 +21,12 @@
       <div class="max-width">
         <div class="logo">Venkat<span>esh</span></div>
         <ul class="menu">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Skills</a></li>
-          <li><a href="#">Github</a></li>
-          <li><a href="#">Project</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#github">Github</a></li>
+          <li><a href="#projects">Project</a></li>
+          <li><a href="#contact">Contact</a></li>
           <li>
             <a href="/doc/Venkatesh_Tiwari_Resume.pdf" download>
               <button id="resume">
@@ -40,7 +40,7 @@
     </div>
 
     <div id="home">
-      <div id="about" class="about section">
+      <div id="intro">
         <div class="text">
           <div class="text1">Hello I Am</div>
           <div id="user-details-name">Venkatesh Tiwari</div>
@@ -62,9 +62,9 @@
         </div>
       </div>
       <div>
-        <h1 class="title">About Me</h1>
+        <h1 class="title" id="about">About Me</h1>
       </div>
-      <div class="container2">
+      <div class="about section" >
         <div>
           <p>
             Dedicated and Skilled Full stack Web Developer, proficient in HTML,
@@ -102,39 +102,43 @@
         <h1  class="title">Languages & Frameworks</h1>
         <div id="skills">
           <div>
-            <img src="https://www.svgrepo.com/show/473654/html5.svg" alt="" />
+            <img src="https://cdn.worldvectorlogo.com/logos/html-1.svg" alt="" />
             <p>HTML</p>
           </div>
           <div>
-            <img src="https://www.svgrepo.com/show/473577/css3.svg" alt="" />
+            <img src="https://cdn.worldvectorlogo.com/logos/css-3.svg" alt="" />
             <p>CSS</p>
           </div>
           <div>
-            <img src="https://www.svgrepo.com/show/508924/js02.svg" alt="" />
+            <img src="https://cdn.worldvectorlogo.com/logos/javascript-1.svg" alt="" />
             <p>Javascript</p>
           </div>
           <div>
-            <img src="https://www.svgrepo.com/show/330398/express.svg" alt="" />
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXo2rg9tacFFbZmxZsSHZnKL_uN8npg9Yng9na233p&s" alt="" />
             <p>Express</p>
           </div>
           <div>
-            <img src="https://www.svgrepo.com/show/342044/mongodb.svg" alt="" />
+            <img src="https://cdn.worldvectorlogo.com/logos/mongodb-icon-1.svg" alt="" />
             <p>MongoDB</p>
           </div>
           <div>
-            <img src="https://www.svgrepo.com/show/445914/node-js.svg" alt="" />
+            <img src="https://cdn.worldvectorlogo.com/logos/nodejs-icon.svg" alt="" />
             <p>Node js</p>
           </div>
           <div>
             <img
-              src="https://upload.wikimedia.org/wikipedia/commons/9/96/Socket-io.svg"
+              src="https://cdn.worldvectorlogo.com/logos/socket-io.svg"
               alt=""
             />
             <p>Socket.io</p>
           </div>
+          <div>
+            <img src="https://cdn.worldvectorlogo.com/logos/aws-2.svg" alt="">
+            <p>AWS</p>
+          </div>
         </div>
       </div>
-      <div class="github">
+      <div id="github">
         <h1  class="title">Github Portfolio</h1>
         <div>
           <link
@@ -153,6 +157,19 @@
               },
             }).then((r) => r.text());
           </script> -->
+          <script>
+            GitHubCalendar(".calendar", "venkat88676");
+        
+            // or enable responsive functionality:
+            GitHubCalendar(".calendar", "venkat88676", { responsive: true });
+        
+            // Use a proxy
+            GitHubCalendar(".calendar", "venkat88676", {
+               proxy () {
+                 return fetch(`https://your-proxy.com/github?user=${venkat88676}`)
+               }
+            }).then(r => r.text())
+        </script>
         </div>
         <div>
           <img
