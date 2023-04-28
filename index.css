@@ -105,11 +105,11 @@
   #skills img{
     width: 100px;
   }
-  .project img{
+  .project-card img{
     width: 500px;
     border-radius: 10px;
   }
-  .project{
+  .project-card{
     display: flex;
   }
   .logo{
