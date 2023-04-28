@@ -50,7 +50,7 @@
   }
  
   /* home section */
-  .photo img{
+  .home-img img{
     width: 300px;
     border-radius:150px ;
   
@@ -75,16 +75,16 @@
     /* text-align: center; */
   }
 
-  .photo{
+  .home-img {
     width: 30%;
     /* border: solid red; */
     text-align: center;
   }
 
-  .about{
+  #about-card{
     display: flex;
   }
-  .about>div{
+  #about-card>div{
     width: 50%;
     margin: auto;
   }
