@@ -23,6 +23,9 @@
     background: rgb(42, 38, 39);
     
   }
+  #logo-name{
+    width: 200px;
+  }
   #resume-link-2 button{
     padding: 10px;
     border: 0px;
