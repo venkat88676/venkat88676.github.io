@@ -15,14 +15,17 @@
     margin: auto;
   }
   #nav-menu{
-    position: sticky;
+    position: fixed;
     padding: 15px;
     width:100%;
+    top: 0px;
     background: rgb(42, 38, 39);
     
   }
-  #resume{
-    padding: 5px;
+  #resume-link-2 button{
+    padding: 10px;
+    border: 0px;
+  
   }
   #nav-menu .max-width{
     display: flex;
@@ -47,12 +50,13 @@
   }
   #nav-menu .menu li :hover{
     color: crimson;
+    border-bottom:chartreuse ;
   }
  
   /* home section */
-  .home-img img{
+  .home-img {
     width: 300px;
-    border-radius:150px ;
+    border-radius:100px ;
   
   }
   #home{
@@ -73,12 +77,6 @@
     line-height: 90px;
     padding: 20px;
     /* text-align: center; */
-  }
-
-  .home-img {
-    width: 30%;
-    /* border: solid red; */
-    text-align: center;
   }
 
   #about-card{
@@ -105,13 +103,43 @@
   #skills img{
     width: 100px;
   }
-  .project-card img{
-    width: 500px;
-    border-radius: 10px;
-  }
-  .project-card{
-    display: flex;
-  }
+ 
+/* =======Projects =====*/
+.project__container img {
+    width:  100%;
+    height: 220px;
+    object-fit: cover;
+}
+.project__container {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 10px;
+}
+.project-card {
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    border-radius: .5rem;
+    overflow: hidden;
+}
+.project-card img {
+    transition: 1s;
+}
+.project-card img:hover {
+    transform: scale(1.1);
+}
+.project_details {
+    padding: 20px;
+}
+.project-github-link{
+  color: black;
+  font-size: 30px;
+}
+.project-deployed-link{
+  margin-left: 20px;
+  color: black;
+  font-size: 30px;
+}
+
+
   .logo{
     width: 60px;
 
