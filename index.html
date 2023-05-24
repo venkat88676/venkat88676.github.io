@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>home_Page</title>
-    <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+    <!-- Git CSS import -->
+    <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
+    <!-- =======icons import====== -->
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
@@ -14,6 +16,7 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
+    <!-- =======css file import====== -->
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
@@ -177,7 +180,15 @@
       </div>
       <div id="github">
         <h1 class="title">Github Portfolio</h1>
-        <div>
+        <a href="https://github.com/venkat88676" class="stats_card"><img id="github-streak-stats"
+          src="https://github-readme-streak-stats.herokuapp.com?user=venkat88676" /></a>
+        <a href="https://github.com/venkat88676" class="stats_card"><img id="github-stats-card"
+                src="https://github-readme-stats.vercel.app/api?username=venkat88676" /></a>
+        <a href="https://github.com/venkat88676" class="stats_card react-activity-calendar">
+            Loading the data just for you.</a>
+        <a href="https://github.com/venkat88676" class="stats_card"><img id="github-top-langs"
+                src="https://github-readme-stats.vercel.app/api/top-langs/?username=venkat88676" alt=""></a>
+        <!-- <div>
           <img
             id="github-streak-stats"
             src="https://github-readme-streak-stats.herokuapp.com?user=venkat88676&theme=transparent"
@@ -197,7 +208,7 @@
             src="https://github-readme-stats.vercel.app/api?username=venkat88676&show_icons=true&theme=transparent"
             alt=""
           />
-        </div>
+        </div> -->
       </div>
       <!-- Projects Section -->
       <section class="projects section" id="projects">
@@ -437,3 +448,7 @@
     </div>
   </body>
 </html>
+
+<!-- ======GIT Calendar====== -->
+<script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+<script> GitHubCalendar(".react-activity-calendar", "venkat88676", { responsive: true, global_stats: false }); </script>
