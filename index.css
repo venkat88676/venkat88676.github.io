@@ -30,15 +30,17 @@
   .resumeBtn{
     padding: 8px;
     border: 0px;
+   
     border-radius: 5px;
     background-color:#426cf5 ;
     color: white;
     font-weight: bolder;
-  
+    transition: transform .5s;
   }
   .resumeBtn:hover{
+    box-shadow: rgba(13, 186, 209, 0.776) 0px 0px 0px 3px;
     cursor: pointer;
-    background-color: #392cc8;
+    transform: scale(1.1);
   }
   #nav-menu .max-width{
     display: flex;
@@ -82,10 +84,11 @@
     border-radius:100px ;
     /* box-shadow: rgba(47, 107, 142, 0.2) 0px 60px 40px -7px; */
     box-shadow: rgba(46, 69, 240, 0.47) -5px 5px, rgba(46, 240, 72, 0.341) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px; 
-    
+    transition: transform .5s;
   }
-  .home-img :hover{
-    
+  .home-img:hover{
+    transform: scale(1.06);
+   
   }
   #user-detail-name{
     color: #426cf5;
@@ -103,9 +106,15 @@
     justify-content: space-around;
 
   }
-
   .social_media_icon{
     font-size: 30px;
+    transition: transform 0.5s;
+  }
+  .social_media_icon:hover{
+    transform: scale(1.3);
+    /* color: #426cf5; */
+    box-shadow: rgba(13, 186, 209, 0.776) 0px 0px 0px 3px;
+    border-radius: 5px
   }
   .text{
     width: 70%;
@@ -129,11 +138,15 @@
     grid-template-columns: repeat(2,1fr);
   }
   .box>div{
-
+    transition: transform .4s;
     padding: 15px;
     margin: 10px;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  }
+  .box>div:hover{
+    box-shadow: rgba(13, 186, 209, 0.776) 0px 0px 0px 3px;
+    transform: scale(1.1)
   }
   #skills{
     display: grid;
@@ -149,7 +162,8 @@
     transition: transform .4s;
   }
   #skills div:hover{
-    background-color: aliceblue;
+    box-shadow: rgba(13, 186, 209, 0.776) 0px 0px 0px 3px;
+    /* background-color: aliceblue; */
     transform: scale(1.1)
   }
   #skills img{
@@ -167,6 +181,7 @@
 }
 .project__container {
   display: grid;
+  box-shadow: rgba(46, 146, 240, 0.4) 0px 5px, rgba(46, 230, 240, 0.3) 0px 10px, rgba(46, 98, 240, 0.2) 0px 15px, rgba(46, 240, 159, 0.1) 0px 20px, rgba(46, 107, 240, 0.05) 0px 25px;
   grid-template-columns: repeat(2,1fr);
   gap: 40px;
   line-height: 35px;
