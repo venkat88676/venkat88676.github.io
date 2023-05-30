@@ -25,6 +25,7 @@
     <nav id="nav-menu">
       <div class="max-width">
         <a href="#home"><img id="logo-name" src="./image/logo-no-background.png" alt=""></a>
+        <ion-icon id="hamburger" name="menu"></ion-icon>
         <!-- <div class="logo">Venkat<span>esh</span></div> -->
         <ul class="menu">
           <li><a class="nav-link home" href="#home">Home</a></li>
@@ -60,39 +61,38 @@
               alt="Typing SVG"
             />
           </div>
-          <a
-            id="resume-link-2"
-            href="https://drive.google.com/uc?export=download&id=11TEoTKpZfBpp87twKzL1wntN9BLdLbv5"
-          >
-            <button id="resume-button-2" class="resumeBtn">
-              Resume 
-              <span><ion-icon name="arrow-down-outline"></ion-icon></span>
-            </button>
-          </a>
-          <br>
           <a href="https://github.com/venkat88676" target="_blank"> <ion-icon class="social_media_icon" name="logo-github"></ion-icon></a>
           <a href="https://www.linkedin.com/in/venkatesh-tiwari-80b361248/" target="_blank"><ion-icon class="social_media_icon" name="logo-linkedin"></ion-icon></a>
-          <a href="mailto:venkat88676@gmail.com"><ion-icon class="social_media_icon" name="mail"></ion-icon></a>
-         
+          <a href="mailto:venkat88676@gmail.com"><ion-icon class="social_media_icon" name="mail"></ion-icon></a>         
         </div>
-        <div>
-          <img class="home-img" src="./image/pic.jpeg" alt="" />
+        <div id="about-gif">
+          <img  src="https://cdn.dribbble.com/users/1418633/screenshots/5106121/hi-dribbble-studiotale.gif" alt="">
         </div>
+       
       </div>
 
       <div class="about section" id="about">
         <h1 class="title">About Me</h1>
         <div id="about-card">
           <div>
-            <p id="user-detail-intro">
+            <h3 id="user-detail-intro">
               Dedicated and Skilled Full stack Web Developer, proficient in
               HTML, CSS, JS, Node.js, Express, and MongoDB. With a passion for
               creating dynamic and user-friendly web applications, Looking
               forward to working in an organization that can challenge my
               abilities as a web developer.
-            </p>
+            </h3>
+            <a id="resume-link-2" href="https://drive.google.com/uc?export=download&id=11TEoTKpZfBpp87twKzL1wntN9BLdLbv5">
+              <button id="resume-button-2" class="resumeBtn">
+                Resume 
+                <span><ion-icon name="arrow-down-outline"></ion-icon></span>
+              </button>
+            </a>
           </div>
-          <div class="box">
+          <div>
+            <img class="home-img" src="./image/pic.jpeg" alt="" />
+          </div>
+          <!-- <div class="box">
             <div>
               <p>1200+</p>
               <p>Hrs Coding</p>
@@ -113,7 +113,7 @@
               <p>200+</p>
               <p>Hrs soft Skills</p>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
       <div>
@@ -183,6 +183,22 @@
             />
             <p class="skills-card-name">AWS</p>
           </div>
+          <div class="skills-card">
+            <img
+              class="skills-card-img"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png"
+              alt=""
+            />
+            <p class="skills-card-name">React.js</p>
+          </div>
+          <div class="skills-card">
+            <img
+              class="skills-card-img"
+              src="https://logoeps.com/wp-content/uploads/2012/03/mysql-vector1.jpg"
+              alt=""
+            />
+            <p class="skills-card-name">MySql</p>
+          </div>
         </div>
       </div>
       <div id="github">
@@ -191,8 +207,10 @@
           Loading the data just for you.</a>
         <a href="https://github.com/venkat88676" class="stats_card"><img id="github-streak-stats"
           src="https://github-readme-streak-stats.herokuapp.com?user=venkat88676" /></a>
+        <br>
         <a href="https://github.com/venkat88676" class="stats_card"><img id="github-stats-card"
                 src="https://github-readme-stats.vercel.app/api?username=venkat88676" /></a>
+        <br>
         <a href="https://github.com/venkat88676" class="stats_card"><img id="github-top-langs"
                 src="https://github-readme-stats.vercel.app/api/top-langs/?username=venkat88676" alt=""></a>
        

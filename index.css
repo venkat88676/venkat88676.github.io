@@ -1,6 +1,7 @@
 
   @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:ital,wght@0,400;0,500;0,700;1,600&family=Ubuntu:wght@300;400&display=swap');
 
+ 
   *{
     /* background-image:url("./image/06b3FMA.jpg"); */
     margin: 0;
@@ -10,11 +11,14 @@
     font-family: 'Open Sans', sans-serif;
     /* font-family: 'Ubuntu',sans-serif; */
   }
-  .max-width{
+  /* .max-width{
     max-width: 1300px;
     padding: 0 80px;
     margin: auto;
-  }
+  } */
+
+  /*======= Navigation part======= */
+
   #nav-menu{
     position: fixed;
     z-index: 1;
@@ -26,11 +30,16 @@
   }
   #logo-name{
     width: 200px;
+    
+  }
+  #hamburger{
+    display: none;
+    font-size: 40px;
+    
   }
   .resumeBtn{
     padding: 8px;
-    border: 0px;
-   
+    border: 0px;   
     border-radius: 5px;
     background-color:#426cf5 ;
     color: white;
@@ -42,10 +51,15 @@
     cursor: pointer;
     transform: scale(1.1);
   }
+  #resume-link-2 button{
+    margin-top:40px ;
+    padding: 10px;
+    font-size: larger;
+  }
   #nav-menu .max-width{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content:space-between;
   }
   a{
     color: #000000;
@@ -53,11 +67,7 @@
     font-weight: 600;
     text-decoration: none;
   }
-  .logo{
-    color: #ffff;
-    font-size: 25px;
-    font-weight: 600;
-  }
+
   #nav-menu .menu li{
     padding-left: 10px;
     list-style: none;
@@ -69,6 +79,34 @@
   }
  
   /*========= Home section======== */
+  
+  #home{
+    position:relative;
+    width: 80%;   
+    margin: auto;
+  }
+
+  #intro{    
+    display: flex;
+    justify-content: space-around;
+    margin: 160px 0 150px 0 ;
+
+  }
+  .social_media_icon{
+    font-size: 45px;
+    transition: transform 0.5s;
+  }
+  .social_media_icon:hover{
+    transform: scale(1.3);
+    /* color: #426cf5; */
+    box-shadow: rgba(13, 186, 209, 0.776) 0px 0px 0px 3px;
+    border-radius: 5px
+  }
+  .text{
+    font-size: 70px;
+    font-weight: 10;
+    line-height: 90px;
+  }
   .title{
     font-size: 40px;
     display: block;
@@ -80,58 +118,45 @@
     color: #426cf5;
   }
   .home-img {
-    width: 300px;
-    border-radius:100px ;
-    /* box-shadow: rgba(47, 107, 142, 0.2) 0px 60px 40px -7px; */
-    box-shadow: rgba(46, 69, 240, 0.47) -5px 5px, rgba(46, 240, 72, 0.341) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px; 
+    width: 250px;
+    border-radius:70px ;
+    /* box-shadow: rgba(46, 69, 240, 0.47) -5px 5px, rgba(46, 240, 72, 0.341) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px; */
     transition: transform .5s;
   }
   .home-img:hover{
+    box-shadow: rgba(13, 186, 209, 0.776) 0px 0px 0px 3px;
     transform: scale(1.06);
    
   }
   #user-detail-name{
     color: #426cf5;
   }
-  #home{
-    position:relative;
-    width: 80%;
-    margin-top:10%;
-    margin-left: 10%;
 
-  }
-  #intro{
-    margin: 95px 0 95px 0 ;
-    display: flex;
-    justify-content: space-around;
-
-  }
-  .social_media_icon{
-    font-size: 30px;
-    transition: transform 0.5s;
-  }
-  .social_media_icon:hover{
-    transform: scale(1.3);
-    /* color: #426cf5; */
-    box-shadow: rgba(13, 186, 209, 0.776) 0px 0px 0px 3px;
-    border-radius: 5px
-  }
-  .text{
-    width: 70%;
-    /* border: solid red; */
-    font-size: 70px;
-    font-weight: 10;
-    line-height: 90px;
-    padding: 20px;
-    /* text-align: center; */
-  }
+  /*=========== About Section=========== */
 
   #about-card{
     display: flex;
+    justify-content: space-between;
   }
-  #about-card>div{
+  #about-card div:nth-child(1){
     width: 50%;
-    margin: auto;
+    margin: 40px 20px 0 40px;
+  }
+  #about-gif{
+    display:flex ;
+    justify-content: center;
+  
+  }
+  #about-gif img{
+    width: 500px;
+    transition: transform 0.5s;
+    border-radius: 90px;
+   
+  
+  }
+  #about-gif img:hover{
+    box-shadow: rgba(13, 186, 209, 0.776) 0px 0px 0px 3px;
+    transform: scale(1.1)
   }
   .box{
     display: grid;
@@ -150,15 +175,15 @@
   }
   #skills{
     display: grid;
-    grid-template-columns: repeat(6,1fr);
+    grid-template-columns: repeat(5,1fr);
     gap: 10px;
 
   }
-  #skills div{
+  #skills div{    
     border-radius: 10px;
-    padding: 5px;
+    padding: 10px;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
-    text-align: center;
+    text-align: center;    
     transition: transform .4s;
   }
   #skills div:hover{
@@ -180,8 +205,7 @@
     /* object-fit: cover; */
 }
 .project__container {
-  display: grid;
-  box-shadow: rgba(46, 146, 240, 0.4) 0px 5px, rgba(46, 230, 240, 0.3) 0px 10px, rgba(46, 98, 240, 0.2) 0px 15px, rgba(46, 240, 159, 0.1) 0px 20px, rgba(46, 107, 240, 0.05) 0px 25px;
+  display: grid;  
   grid-template-columns: repeat(2,1fr);
   gap: 40px;
   line-height: 35px;
@@ -219,18 +243,75 @@
     margin-top: 20px;
     padding: 10px;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
-    background-color: aliceblue;
-   
+    background-color: aliceblue;   
     line-height: 30px;
   }
 
   #socialMedia{
+    display: flex;
     padding: 50px;
     width: 60%;
     margin: auto;
-    text-align: center;
-    display: flex;
+    text-align: center;   
     justify-content: space-around;
   }
+  .logo{
+    color: #ffff;
+    font-size: 25px;
+    font-weight: 600;   
+  }
   
- 
+
+   /* Medium Screen Media Query */
+   @media screen and (min-width:850px) and (max-width:1120px) {
+    .text1,#user-detail-name{
+      font-size: 55px;
+     
+    }
+    #about-gif img{
+      width: 350px;
+    }
+  }
+  /*===== Small Screen===== */
+  @media screen and (min-width:320px) and (max-width:850px) {
+    #hamburger{
+      display: block;
+    }
+    .menu{
+      display: none;
+    }
+    #intro{
+      flex-direction: column-reverse;      
+      margin-top: 80px;
+      margin-bottom: 0;
+    }
+    #about-gif img{
+     /* margin-left: 25%; */
+      width: 350px;
+      border: solid red;
+    }
+    .text{
+      width: 100%;
+      text-align: center;
+      border: solid red;
+    
+    }
+    #about-card{
+      flex-direction: column;
+    }
+    #skills{
+      grid-template-columns: repeat(3,1fr);
+    }
+    .project__container{
+      grid-template-columns: repeat(1,1fr);
+    }
+    #github-top-langs,#github-stats-card,#github-streak-stats{
+      width: 300px;
+    }
+    #socialMedia{
+      flex-direction: column;
+    }
+    #home{
+      width: 90%;
+    }
+  }
