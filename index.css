@@ -384,18 +384,23 @@
     width: 100%;
     margin: 0;
   }
+  .home-img{
+    /* border: solid red; */
+    display: block;
+    margin: auto;
+  }
     #about-card{
       flex-direction: column;
     }
-    #skills{
+    #skills_container{
       grid-template-columns: repeat(3,1fr);
     }
     .project__container{
       grid-template-columns: repeat(1,1fr);
     }
     #github-top-langs , #github-stats-card , #github-streak-stats{
-      width: 200px;
-      border: solid red;
+      width: 220px;
+      /* border: solid red; */
     }
     #socialMedia{
       flex-direction: column;
