@@ -346,6 +346,9 @@
       font-size: 55px;
      
     }
+    .project__container{
+      grid-template-columns: repeat(2,1fr);
+    }
     #about-gif img{
       width: 350px;
     }
