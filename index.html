@@ -24,7 +24,7 @@
     <!-- NAVIGATION PART -->
     <nav id="nav-menu">
         <a href="#home"><img id="logo-name" src="./image/logo-no-background.png" alt=""></a>
-        
+
         <div onclick="hamburger()">
           <ion-icon id="hamburger" name="menu"></ion-icon>
         </div>
@@ -57,12 +57,24 @@
     <div class="menu-page">
      
       <ul >
-        <li onclick="hamburger()"><a class="nav-link home" href="#home">Home</a></li>
-        <li onclick="hamburger()"><a class="nav-link about" href="#about">About</a></li>
-        <li onclick="hamburger()"><a class="nav-link skills" href="#skills">Skills</a></li>
-        <li onclick="hamburger()"><a href="#github">Github</a></li>
-        <li onclick="hamburger()"><a class="nav-link projects" href="#projects">Project</a></li>
-        <li onclick="hamburger()"><a class="nav-link contact" href="#contact">Contact</a></li>
+        <li onclick="hamburger()">
+          <a class="nav-link home" href="#home">Home</a>
+        </li>
+        <li onclick="hamburger()">
+          <a class="nav-link about" href="#about">About</a>
+        </li>
+        <li onclick="hamburger()">
+          <a class="nav-link skills" href="#skills">Skills</a>
+        </li>
+        <li onclick="hamburger()">
+          <a href="#github">Github</a>
+        </li>
+        <li onclick="hamburger()">
+          <a class="nav-link projects" href="#projects">Project</a>
+        </li>
+        <li onclick="hamburger()">
+          <a class="nav-link contact" href="#contact">Contact</a>
+        </li>
         <li>
           <a
             id="resume-link-1"
@@ -81,6 +93,7 @@
 
     <!-- MAIN BODY -->
     <div id="home">
+      <br>
       <div id="intro">
         <div class="text">
           <div><p class="text1">Hello I Am</p></div>
@@ -101,6 +114,7 @@
       </div>
 
       <div class="about section" id="about">
+        <br>
         <h1 class="title">About Me</h1>
         <div id="about-card">
           <div>
@@ -117,33 +131,12 @@
           <div>
             <img class="home-img" src="./image/pic.jpeg" alt="" />
           </div>
-          <!-- <div class="box">
-            <div>
-              <p>1200+</p>
-              <p>Hrs Coding</p>
-            </div>
-            <div>
-              <p>30+</p>
-              <p>Mini Project</p>
-            </div>
-            <div>
-              <p>3+</p>
-              <p>Major Project</p>
-            </div>
-            <div>
-              <p>300+</p>
-              <p>DSA Problem</p>
-            </div>
-            <div>
-              <p>200+</p>
-              <p>Hrs soft Skills</p>
-            </div>
-          </div> -->
         </div>
       </div>
-      <div>
-        <h1 class="title">Languages & Frameworks</h1>
-        <div id="skills">
+      <div id="skills">
+        <br>
+          <h1 class="title">Languages & Frameworks</h1>
+        <div id="skills_container">          
           <div class="skills-card">
             <img
               class="skills-card-img"
@@ -227,23 +220,26 @@
         </div>
       </div>
       <div id="github">
+        <br>
         <h1 class="title">Github Portfolio</h1>
         <a href="https://github.com/venkat88676" class="stats_card react-activity-calendar">
           Loading the data just for you.</a>
-        <a href="https://github.com/venkat88676" class="stats_card"><img id="github-streak-stats"
-          src="https://github-readme-streak-stats.herokuapp.com?user=venkat88676" /></a>
         <br>
         <a href="https://github.com/venkat88676" class="stats_card"><img id="github-stats-card"
-                src="https://github-readme-stats.vercel.app/api?username=venkat88676" /></a>
-        <br>
+                src="https://github-readme-stats.vercel.app/api?username=venkat88676" />
+        </a>
+  
         <a href="https://github.com/venkat88676" class="stats_card"><img id="github-top-langs"
-                src="https://github-readme-stats.vercel.app/api/top-langs/?username=venkat88676" alt=""></a>
+                src="https://github-readme-stats.vercel.app/api/top-langs?username=venkat88676&show_icons=true&locale=en&layout=compact" alt=""></a>
+  
+        <a href="https://github.com/venkat88676" class="stats_card"><img id="github-streak-stats"
+          src="https://github-readme-streak-stats.herokuapp.com?user=venkat88676" /></a>
        
       </div>
       <!-- Projects Section -->
       <section class="projects section" id="projects">
+        <br>
         <h2 class="section-title title">Projects</h2>
-
         <div class="project__container bd-grid">
           <div class="project-card">
             <img src="./image/qrCode_home_SS.png" alt="" />
@@ -284,6 +280,7 @@
               <p class="project-description">
                 BestBuy.com is an website sells consumer electronics and a variety
                 of related merchandise,software,etc
+              </p>
               <br />
               <a
                 href="https://github.com/venkat88676/Bestbuy-Clone"
@@ -363,37 +360,26 @@
       <h2 class="title">Contact Me</h2>
       <div id="socialMedia">
         <div id="contact-phone">
-          <img
-            class="logo"
-            src="https://www.freeiconspng.com/thumbs/phone-icon/white-phone-icon-png--clipart-best-30.png"
-            alt=""
-          />
+          <ion-icon class="social_media_icon" name="call"></ion-icon>
           <h4>+91-7566992446</h4>
         </div>
         <div id="contact-email">
-          <img
-            class="logo"
-            src="https://cdn-icons-png.flaticon.com/512/720/720277.png"
-            alt=""
-          />
-          <h4>venkat88676@gmail.com</h4>
+          <a href="mailto:venkat88676@gmail.com">
+            <ion-icon class="social_media_icon" name="mail"></ion-icon>
+            <p>Email</p>
+          </a>  
         </div>
         <div id="contact-github">
-          <a href="https://github.com/venkat88676"
-            ><img
-              class="logo"
-              src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
-              alt=""
-          /></a>
+          <a href="https://github.com/venkat88676">
+            <ion-icon class="social_media_icon" name="logo-github"></ion-icon>
+          </a>          
           <h4>Github</h4>
         </div>
+
         <div id="contact-linkedin">
-          <a href="https://www.linkedin.com/in/venkatesh-tiwari-80b361248/"
-            ><img
-              class="logo"
-              src="https://cdn-icons-png.flaticon.com/512/174/174857.png"
-              alt=""
-          /></a>
+          <a href="https://www.linkedin.com/in/venkatesh-tiwari-80b361248/">
+            <ion-icon  class="social_media_icon"  name="logo-linkedin"></ion-icon>
+          </a>          
           <h4>linkedin</h4>
         </div>
       </div>

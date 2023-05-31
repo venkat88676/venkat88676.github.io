@@ -100,12 +100,14 @@
     height: 100%;
     padding: 20px;
     display: none;
-    animation: slideInLeft .5s ease-in 0s 1 normal forwards;
-  
+   animation: slideInLeft .5s ease-in-out 0s 1 normal forwards;
+   
   }
   
   .menu-page.activate {
     display: block;
+    transform:translateX(45%);
+
   }
   
   .menu-page li {
@@ -125,7 +127,8 @@
   /*========= Home section======== */
   
   #home{
-    position:relative;
+   
+    position:relative;   
     width: 85%;   
     margin: auto;
   }
@@ -163,6 +166,7 @@
     border-bottom:solid #2d2b2bb5; 
     border-bottom-width: thin;
     color: #426cf5;
+
   }
 
   #user-detail-name{
@@ -181,7 +185,7 @@
   } */
   #user-detail-intro{
     text-align: justify;
-    width: 65%;
+    width: 75%;
     font-size: larger;
     margin: 40px 20px 0 40px;
   }
@@ -205,10 +209,7 @@
   .home-img {
     width: 250px;
     border-radius:70px;
-    display: block;
-    margin: auto;
-    
-    /* box-shadow: rgba(46, 69, 240, 0.47) -5px 5px, rgba(46, 240, 72, 0.341) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px; */
+    margin: 40px 0 0 0;
     transition: transform .5s;
   }
   .home-img:hover{
@@ -222,21 +223,21 @@
     font-size: larger;
   }
 
-  /* Skill section */
-  #skills{
+  /*=============== Skill section============ */
+  #skills_container{
     display: grid;
     grid-template-columns: repeat(5,1fr);
     gap: 10px;
 
   }
-  #skills div{    
+  #skills_container div{    
     border-radius: 10px;
     padding: 10px;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
     text-align: center;    
     transition: transform .4s;
   }
-  #skills div:hover{
+  #skills_container div:hover{
     box-shadow: rgba(13, 186, 209, 0.776) 0px 0px 0px 3px;
     /* background-color: aliceblue; */
     transform: scale(1.1)
@@ -316,6 +317,7 @@
     line-height: 30px;
   }
 
+
   #socialMedia{
     display: flex;
     padding: 50px;
@@ -348,7 +350,7 @@
       /* z-index: 1;  */
       /* border: solid red; */
     }
-    
+
     .menu-icon {
       display: block;
     }
@@ -391,8 +393,9 @@
     .project__container{
       grid-template-columns: repeat(1,1fr);
     }
-    #github-top-langs,#github-stats-card,#github-streak-stats{
-      width: 300px;
+    #github-top-langs , #github-stats-card , #github-streak-stats{
+      width: 200px;
+      border: solid red;
     }
     #socialMedia{
       flex-direction: column;
