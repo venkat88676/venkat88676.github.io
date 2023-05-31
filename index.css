@@ -307,6 +307,13 @@
     width: 60px;
 
   }
+
+  /*======== Github section========= */
+ 
+  #github-top-langs , #github-stats-card , #github-streak-stats{
+    width: 340px;
+    /* border: solid red; */
+  }
   /* =========Footer part========== */
   #contact{ 
     /* display: flex; */
@@ -399,7 +406,7 @@
       grid-template-columns: repeat(1,1fr);
     }
     #github-top-langs , #github-stats-card , #github-streak-stats{
-      width: 220px;
+      width: 300px;
       /* border: solid red; */
     }
     #socialMedia{
