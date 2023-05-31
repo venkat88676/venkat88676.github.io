@@ -24,14 +24,18 @@
     <!-- NAVIGATION PART -->
     <nav id="nav-menu">
         <a href="#home"><img id="logo-name" src="./image/logo-no-background.png" alt=""></a>
-  
-        <ul class="menu">
-          <li><a class="nav-link home" href="#home">Home</a></li>
-          <li><a class="nav-link about" href="#about">About</a></li>
-          <li><a class="nav-link skills" href="#skills">Skills</a></li>
-          <li><a href="#github">Github</a></li>
-          <li><a class="nav-link projects" href="#projects">Project</a></li>
-          <li><a class="nav-link contact" href="#contact">Contact</a></li>
+        
+        <div onclick="hamburger()">
+          <ion-icon id="hamburger" name="menu"></ion-icon>
+        </div>
+
+        <ul class="menu">          
+          <li ><a class="nav-link home" href="#home">Home</a></li>
+          <li ><a  class="nav-link about" href="#about">About</a></li>
+          <li><a  class="nav-link skills" href="#skills">Skills</a></li>
+          <li><a  href="#github">Github</a></li>
+          <li><a  class="nav-link projects" href="#projects">Project</a></li>
+          <li><a  class="nav-link contact" href="#contact">Contact</a></li>
           <li>
             <a
               id="resume-link-1"
@@ -45,25 +49,20 @@
             </a>
           </li>
         </ul>
-        <div onclick="hamburger()">
-          <ion-icon id="hamburger" name="menu"></ion-icon>
-        </div>
+       
     </nav>
 
     <!-- Hamburger Menu -->
 
     <div class="menu-page">
-      <div>
-          <img id="logo-name" src="./image/logo-no-background.png" alt="">
-          <div onclick="remove()"><ion-icon name="close"></ion-icon></div>
-      </div>
+     
       <ul >
-        <li><a class="nav-link home" href="#home">Home</a></li>
-        <li><a class="nav-link about" href="#about">About</a></li>
-        <li><a class="nav-link skills" href="#skills">Skills</a></li>
-        <li><a href="#github">Github</a></li>
-        <li><a class="nav-link projects" href="#projects">Project</a></li>
-        <li><a class="nav-link contact" href="#contact">Contact</a></li>
+        <li onclick="hamburger()"><a class="nav-link home" href="#home">Home</a></li>
+        <li onclick="hamburger()"><a class="nav-link about" href="#about">About</a></li>
+        <li onclick="hamburger()"><a class="nav-link skills" href="#skills">Skills</a></li>
+        <li onclick="hamburger()"><a href="#github">Github</a></li>
+        <li onclick="hamburger()"><a class="nav-link projects" href="#projects">Project</a></li>
+        <li onclick="hamburger()"><a class="nav-link contact" href="#contact">Contact</a></li>
         <li>
           <a
             id="resume-link-1"
@@ -284,7 +283,7 @@
               </h5>
               <p class="project-description">
                 BestBuy.com is an website sells consumer electronics and a variety
-                of related merchandise, including software,etc
+                of related merchandise,software,etc
               <br />
               <a
                 href="https://github.com/venkat88676/Bestbuy-Clone"
@@ -406,14 +405,4 @@
 <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
 <script> GitHubCalendar(".react-activity-calendar", "venkat88676", { responsive: true, global_stats: false }); </script>
 
-<script>
-    const icon = document.querySelector(".menu-page")
-  function hamburger() {
-      console.log("menu-icon")
-      icon.classList.add("activate")
-  }
-  function remove() {
-      console.log("close")
-      icon.classList.remove("activate")
-  }
-</script>
+<script src="./index.js"></script>
