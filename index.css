@@ -15,6 +15,9 @@
     background-color: #343637;
     color: white;
   }
+  body.dark #about-gif>img{
+    box-shadow: rgb(57, 134, 217) 0px 20px 30px -10px;
+  }
   #nav-menu.dark{
     background-color: #65696b;
     color: white;
@@ -39,19 +42,20 @@
     background-color: aliceblue;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
   }
+  #nav-menu div{
+    display: flex;
+
+  }
   #logo-name{
     width: 200px;
     
   }
-  .menu{
-    margin-right: -210px;
-  }
   #hamburger{
     display: none;
     font-size: 40px;
-    z-index: 1; 
-    /* margin-left:90%; */
-    /* border: solid red; */
+    z-index: 1;     
+    margin-left:20px;
+   
     
   }
   .resumeBtn{
@@ -59,12 +63,13 @@
     border: 0px;   
     border-radius: 5px;
     background-color:#426cf5 ;
+    
     color: white;
     font-weight: bolder;
     transition: transform .5s;
   }
   .resumeBtn:hover{
-    box-shadow: rgba(13, 186, 209, 0.776) 0px 0px 0px 3px;
+    box-shadow:rgb(42, 216, 170) 0px 0px 0px 3px;
     cursor: pointer;
     transform: scale(1.1);
   }
@@ -87,25 +92,29 @@
    
   }
   .lightmode{
+    cursor: pointer;
     display: none ;
     color: white;    
-    background-color: #00A1E0;
+    background-color: rgb(57, 134, 217);
     border-radius: 15px;
     font-size: 20px;
     padding: 5px;
-    margin-bottom: -8px;
+    margin-left: 8px;
+    /* margin-bottom: -8px; */
   }
   .lightmode.activate{
     display: block ;
   }
   .darkmode{
+    cursor: pointer;
     color:rgb(24, 24, 24) ;
     display: none ;
     font-size: 20px;
     background-color: #b2b4b5eb;
     border-radius: 15px;
     padding: 5px;
-    margin-bottom: -8px;
+    margin-left: 8px;
+    /* margin-bottom: -8px; */
   }
   .darkmode.activate{
     display: block  ;
@@ -244,6 +253,7 @@
     /* border: solid red; */
     width: 500px;
     border-radius: 200px;  
+    
   
   }
   
@@ -251,6 +261,7 @@
     width: 250px;
     border-radius:70px;
     margin: 40px 0 0 0;
+    box-shadow: rgb(57, 134, 217) 0px 20px 30px -10px;
     transition: transform .5s;
   }
   .home-img:hover{
@@ -274,12 +285,13 @@
   #skills_container div{    
     border-radius: 10px;
     padding: 10px;
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    box-shadow: rgb(57, 134, 217) 0px 20px 30px -10px;
+    /* box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px; */
     text-align: center;    
     transition: transform .4s;
   }
   #skills_container div:hover{
-    box-shadow: rgba(13, 186, 209, 0.776) 0px 0px 0px 3px;
+    box-shadow: rgb(42, 216, 170) 0px 0px 0px 3px;
     /* background-color: aliceblue; */
     transform: scale(1.1)
   }
@@ -300,9 +312,12 @@
   box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
   border-radius: .5rem;
   overflow: hidden;
+  box-shadow: rgb(57, 134, 217) 0px 20px 30px -10px;
+  transition: transform .5s;
 }
 
 .project-card:hover{
+  transform: scale(1.03);
   box-shadow: rgba(13, 186, 209, 0.659) 0px 0px 0px 3px;
 }
 
