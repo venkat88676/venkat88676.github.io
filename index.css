@@ -11,6 +11,18 @@
     font-family: 'Open Sans', sans-serif;
   
   }
+  body.dark{
+    background-color: #343637;
+    color: white;
+  }
+  #nav-menu.dark{
+    background-color: #65696b;
+    color: white;
+  }
+  #contact.dark{
+    background-color: #65696b;
+    color: white;
+  }
  
 
   /*======= Navigation part======= */
@@ -68,6 +80,32 @@
   #nav-menu .menu li :hover{
     border-bottom:solid  #426cf5;
    
+  }
+  .lightmode{
+    display: none ;
+    color: white;    
+    background-color: #00A1E0;
+    border-radius: 15px;
+    font-size: 20px;
+    padding: 5px;
+    margin-bottom: -10px;
+  }
+  .lightmode.activate{
+    display: block ;
+  }
+  .darkmode{
+    color:rgb(24, 24, 24) ;
+    display: none ;
+    font-size: 20px;
+    background-color: #b2b4b5eb;
+    border-radius: 15px;
+    padding: 5px;
+    margin-bottom: -10px;
+  }
+  .darkmode.activate{
+    display: block  ;
+    
+    
   }
 
   /*====== Hamburger Menu======== */
@@ -198,14 +236,10 @@
   #about-gif>img{
     /* border: solid red; */
     width: 500px;
-    transition: transform 0.5s;
-    border-radius: 90px;  
+    border-radius: 200px;  
   
   }
-  #about-gif>img:hover{
-    /* box-shadow: rgba(67, 83, 86, 0.776) 0px 0px 0px 3px; */
-    transform: scale(1.1)
-  }
+  
   .home-img {
     width: 250px;
     border-radius:70px;
@@ -308,13 +342,17 @@
 
   }
 
+
   /*======== Github section========= */
  
   #github-top-langs , #github-stats-card , #github-streak-stats{
     width: 340px;
     /* border: solid red; */
   }
+
+
   /* =========Footer part========== */
+
   #contact{ 
     /* display: flex; */
     margin-top: 20px;
