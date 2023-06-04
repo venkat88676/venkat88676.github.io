@@ -28,6 +28,7 @@
         <div onclick="hamburger()">
           <ion-icon id="hamburger" name="menu"></ion-icon>
         </div>
+      
 
         <ul class="menu">          
           <li ><a class="nav-link home" href="#home">Home</a></li>
@@ -47,11 +48,14 @@
                 <span><ion-icon name="arrow-down-outline"></ion-icon></span>
               </button>
             </a>
-          </li>
-          <li ><ion-icon onclick="lightMode()" class="lightmode " name="sunny"></ion-icon></li>
-          <li ><ion-icon onclick="darkMode()" class="darkmode activate" name="moon"></ion-icon></li>
+          </li>         
           
         </ul>
+        <div>
+          <ion-icon onclick="lightMode()" class="lightmode " name="sunny"></ion-icon>
+          <ion-icon onclick="darkMode()" class="darkmode activate" name="moon"></ion-icon>
+        </div>
+       
        
     </nav>
 
@@ -89,7 +93,8 @@
               <span><ion-icon name="arrow-down-outline"></ion-icon></span>
             </button>
           </a>
-        </li>
+        </li>        
+        
       </ul>
 
   </div>

@@ -43,10 +43,15 @@
     width: 200px;
     
   }
+  .menu{
+    margin-right: -210px;
+  }
   #hamburger{
     display: none;
     font-size: 40px;
     z-index: 1; 
+    /* margin-left:90%; */
+    /* border: solid red; */
     
   }
   .resumeBtn{
@@ -88,7 +93,7 @@
     border-radius: 15px;
     font-size: 20px;
     padding: 5px;
-    margin-bottom: -10px;
+    margin-bottom: -8px;
   }
   .lightmode.activate{
     display: block ;
@@ -100,7 +105,7 @@
     background-color: #b2b4b5eb;
     border-radius: 15px;
     padding: 5px;
-    margin-bottom: -10px;
+    margin-bottom: -8px;
   }
   .darkmode.activate{
     display: block  ;
@@ -123,6 +128,8 @@
   .menu-icon {
     display: none;
     font-size: 55px;
+    margin-right: -210px;
+  
   }
   
   .menu-icon:hover {
