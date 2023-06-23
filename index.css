@@ -11,6 +11,10 @@
     font-family: 'Open Sans', sans-serif;
   
   }
+  ion-icon{
+    color: #343637;
+  }
+ 
   body.dark{
     background-color: #343637;
     color: white;
@@ -39,7 +43,7 @@
     padding: 15px;
     width:100%;
     top: 0px;
-    background-color: aliceblue;
+    background-color: #232e42;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
   }
   #nav-menu div{
@@ -75,8 +79,9 @@
   }
  
 
-  a{
-    color: #000000;
+  nav a{
+    /* color: #000000; */
+    color: white;
     font-size: 15px;
     font-weight: 600;
     text-decoration: none;
@@ -382,8 +387,15 @@
     margin-top: 20px;
     padding: 10px;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
-    background-color: aliceblue;   
+    background-color:  #232e42;;   
     line-height: 30px;
+    
+  }
+  #contact ion-icon{
+    color: white;
+  }
+  #contact a{
+    color: white;
   }
 
 
