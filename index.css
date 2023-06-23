@@ -59,6 +59,7 @@
     font-size: 40px;
     z-index: 1;     
     margin-left:20px;
+    color: white;
    
     
   }
@@ -143,7 +144,7 @@
     display: none;
     font-size: 55px;
     margin-right: -210px;
-  
+   
   }
   
   .menu-icon:hover {
@@ -151,14 +152,15 @@
   }
   
   .menu-page {
-    background-color:rgb(240, 248, 255);  
-    top: 10%;
+    background-color:#232e42;  
+    top: 9%;
     position: fixed;
     z-index: 1;
     width: 70%;
     height: 100%;
     padding: 20px;
     display: none;
+    
    animation: slideInLeft .5s ease-in-out 0s 1 normal forwards;
    
   }
@@ -171,13 +173,14 @@
   
   .menu-page li {
     list-style: none;;
-    color: rgb(132, 44, 44);
+  
     text-align: center;
     margin: 20px 0 40px 0;
   }
 
   .menu-page a{
-    font-size: 20px;
+    color: white;
+    font-size:25px;
   }
   .menu-page a:hover{
     border-bottom: solid #00A1E0;
@@ -258,7 +261,7 @@
     /* border: solid red; */
     width: 500px;
     box-shadow: rgb(57, 134, 217) 0px 20px 30px -10px;
-    height: 350px;
+    /* height: 350px; */
     border-radius: 50px;  
     
   
@@ -286,7 +289,7 @@
   #skills_container{
     display: grid;
     grid-template-columns: repeat(5,1fr);
-    gap: 10px;
+    gap: 30px;
 
   }
   #skills_container div{    
@@ -450,11 +453,14 @@
     #about-gif img{
      /* margin-left: 25%; */
       width: 350px;
+      /* margin-bottom: 40px; */
+      margin: 60px 0 60px 0;
       /* border: solid red; */
     }
     .text{
       width: 100%;
       text-align: center;
+      font-size: 55px;
       /* border: solid red; */
     
     }
@@ -481,6 +487,7 @@
     }
     .project__container{
       grid-template-columns: repeat(1,1fr);
+      margin: 15px;
     }
     #github-top-langs , #github-stats-card , #github-streak-stats{
       width: 300px;
