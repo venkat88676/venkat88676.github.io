@@ -252,7 +252,9 @@
   #about-gif>img{
     /* border: solid red; */
     width: 500px;
-    border-radius: 200px;  
+    box-shadow: rgb(57, 134, 217) 0px 20px 30px -10px;
+    height: 350px;
+    border-radius: 50px;  
     
   
   }
