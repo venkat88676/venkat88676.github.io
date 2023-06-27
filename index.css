@@ -453,7 +453,8 @@
     }
     #about-gif img{
      /* margin-left: 25%; */
-      width: 350px;
+      width: 320px;
+      height: 220px;
       /* margin-bottom: 40px; */
       margin: 60px 0 60px 0;
       /* border: solid red; */
