@@ -20,6 +20,7 @@
     color: white;
   }
   body.dark #about-gif>img{
+  
     box-shadow: rgb(57, 134, 217) 0px 20px 30px -10px;
   }
   #nav-menu.dark{
@@ -259,9 +260,9 @@
   }
   #about-gif>img{
     /* border: solid red; */
-    width: 500px;
+    width: 450px;
     box-shadow: rgb(57, 134, 217) 0px 20px 30px -10px;
-    /* height: 350px; */
+    height: 330px;
     border-radius: 50px;  
     
   
@@ -269,9 +270,9 @@
   
   .home-img {
     width: 250px;
-    border-radius:70px;
+    border-radius:50px;
     margin: 40px 0 0 0;
-    box-shadow: rgb(57, 134, 217) 0px 20px 30px -10px;
+    /* box-shadow: rgb(57, 134, 217) 0px 20px 30px -10px; */
     transition: transform .5s;
   }
   .home-img:hover{
