@@ -12,11 +12,11 @@
   
   }
   ion-icon{
-    color: #343637;
+    color: #6c7072;
   }
  
   body.dark{
-    background-color: #343637;
+    background-color: #232e42;
     color: white;
   }
   body.dark #about-gif>img{
@@ -24,11 +24,11 @@
     box-shadow: rgb(57, 134, 217) 0px 20px 30px -10px;
   }
   #nav-menu.dark{
-    background-color: #65696b;
+    background-color: #374765;
     color: white;
   }
   #contact.dark{
-    background-color: #65696b;
+    background-color: #374765;
     color: white;
   }
  
@@ -296,7 +296,10 @@
   #skills_container div{    
     border-radius: 10px;
     padding: 10px;
-    box-shadow: rgb(57, 134, 217) 0px 20px 30px -10px;
+    /* box-shadow: rgb(57, 134, 217) 0px 20px 30px -10px; */
+    /* box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px; */
+    /* box-shadow: rgba(65, 130, 180, 0.16) 0px 10px 36px 0px, rgba(7, 67, 247, 0.06) 0px 0px 0px 1px; */
+    box-shadow: rgba(14, 80, 203, 0.34) 0px 0px 0px 3px;
     /* box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px; */
     text-align: center;    
     transition: transform .4s;
