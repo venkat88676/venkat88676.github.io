@@ -64,7 +64,7 @@
    
     
   }
-  .resumeBtn{
+  .resumeBtn , .hamburger-resumeBtn{
     padding: 8px;
     border: 0px;   
     border-radius: 5px;
@@ -74,7 +74,7 @@
     font-weight: bolder;
     transition: transform .5s;
   }
-  .resumeBtn:hover{
+  .resumeBtn:hover , .hamburger-resumeBtn:hover{
     box-shadow:rgb(42, 216, 170) 0px 0px 0px 3px;
     cursor: pointer;
     transform: scale(1.1);
@@ -186,7 +186,9 @@
   .menu-page a:hover{
     border-bottom: solid #00A1E0;
   }
- 
+  .hamburger-resumeBtn{
+
+  }
   /*========= Home section======== */
   
   #home{
