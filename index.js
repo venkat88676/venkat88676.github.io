@@ -26,3 +26,24 @@ function darkMode(){
   footer.classList.add("dark")
   body.classList.add("dark")
 }
+
+const resume = document.getElementById("resume-button-1");
+resume.onclick = () => {
+  
+    window.open("./resume/Venkatesh-Tiwari-Resume.pdf", "_blank")
+   
+}
+
+const containerResume = document.getElementById("resume-button-2");
+containerResume.onclick = () => {
+   
+    window.open("./resume/Venkatesh-Tiwari-Resume.pdf", "_blank")
+    
+}
+
+const hamburgerResume = document.getElementById("resume-button-3");
+hamburgerResume.onclick = () => {
+   
+    window.open("./resume/Venkatesh-Tiwari-Resume.pdf", "_blank")
+    
+}
