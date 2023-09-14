@@ -17,6 +17,7 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- =======css file import====== -->
     <link rel="stylesheet" href="index.css" />
   </head>
@@ -471,17 +472,27 @@
       </div>     
       <div>
         <h4 class="title">Contact Me</h4>
-        <div id="form">
-          <input type="text" id="name" placeholder=" Your Name">
-          <input type="email" id="email" placeholder="Email">
-          <input type="number" id="phone" placeholder="Phone No">
-          <textarea placeholder="Message" id="msg" cols="30" rows="10"></textarea>
-          <button id="sendBtn">Send</button>         
-        </div>
+        <form action="index.html" onsubmit="sendMail(event)">
+          <input type="text" id="name" placeholder=" Your Name" required >
+          <input type="email" id="email" placeholder="Email"  required>
+          <input type="number" id="phone" placeholder="Phone No" >
+          <textarea placeholder="Message" id="message" cols="30" rows="10" required ></textarea>
+          <button type="submit" id="sendBtn" >Send</button>         
+        </form>
       </div>
     </div>
   </body>
 </html>
+
+<script
+  type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+></script>
+<script type="text/javascript">
+  (function () {
+    emailjs.init("oOXcvjbK6FCGW_Pzb");
+  })();
+</script>
 
 <!-- ======GIT Calendar====== -->
 <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>

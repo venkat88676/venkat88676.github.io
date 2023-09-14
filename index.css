@@ -264,7 +264,7 @@
   #about-gif>img{
     /* border: solid red; */
     width: 450px;
-    box-shadow: rgb(57, 134, 217) 0px 20px 30px -10px;
+    box-shadow: rgb(199, 201, 204) 0px 20px 30px -10px;
     height: 330px;
     border-radius: 50px;  
     
@@ -273,9 +273,10 @@
   
   .home-img {
     width: 250px;
-    border-radius:50px;
+    border-radius:25px;
     margin: 40px 0 0 0;
-    box-shadow: rgb(78, 150, 226) 0px 20px 30px -10px;
+    /* border: .3px solid #0c132d; */
+    /* box-shadow: rgb(75, 78, 83) 0px 20px 30px -10px; */
     transition: transform .5s;
   }
   .home-img:hover{
@@ -423,15 +424,15 @@
   .information img{
     width: 30px;
   }
-  #form{
+  form{
     padding: 10px;
     border: 0.3px solid #fff;
-    padding: 10px 50px 10px 50px;
+    padding: 10px 40px 10px 40px;
     border-radius: 20px;
     width: 80%;
     margin: auto;
   }
-  #form input,#form textarea{
+  form input,form textarea{
     width: 100%;
     padding: 8px;
     border-radius:10px ;
@@ -439,6 +440,7 @@
   
   }
   #sendBtn{
+    cursor: pointer;
     display: block;
     padding: 10px;
     width: 30%;
