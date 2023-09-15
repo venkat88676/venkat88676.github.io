@@ -264,9 +264,9 @@
   #about-gif>img{
     /* border: solid red; */
     width: 450px;
-    box-shadow: rgb(199, 201, 204) 0px 20px 30px -10px;
+    /* box-shadow: rgb(199, 201, 204) 0px 20px 30px -10px; */
     height: 330px;
-    border-radius: 50px;  
+    /* border-radius: 50px;   */
     
   
   }
