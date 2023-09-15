@@ -50,7 +50,7 @@ hamburgerResume.onclick = () => {
 
 function sendMail(e) {
   e.preventDefault();
-  document.getElementById('sendBtn').innerHTML = `<i class="fa fa-refresh fa-spin"></i> Send`
+  document.getElementById('sendBtn').innerHTML = `<i class="fa fa-spinner fa-spin"></i> Send`
   document.getElementById('sendBtn').disabled = true;
   var params = {
     name: document.getElementById("name").value,
