@@ -559,11 +559,18 @@
     #home{
       width: 90%;
     }
-    #typing-effect{
-      display: none;
+    #typing-effect img{
+      /* display: none; */
+      width: 90%;
+      margin: auto;
     }
+  
     #contact{
       flex-direction: column;
+    }
+    form{
+      padding: 10px 20px 10px 20px;
+      width: 95%;
     }
     #contact>div:nth-child(1){
       width: 100%;
