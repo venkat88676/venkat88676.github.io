@@ -79,9 +79,3 @@ function sendMail(e) {
   })
 }
 
-// -------------typing effect css-------------
-
-let typingImg=document.getElementById("typing-img")
-if(window.innerWidth<1120){
-  typingImg.src = "https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=42b0f5&width=435&center=true&vCenter=true&lines=A+Full+Stack+Web+Developer+;+A+MERN+Developer+"
-}
