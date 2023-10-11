@@ -217,6 +217,7 @@
   }
   .text{
     width: 100%;
+    /* text-align: center; */
     /* border: solid red; */
     font-size: 70px;
     font-weight: 10;
@@ -562,8 +563,10 @@
     #typing-effect img{
       /* display: none; */
       width: 90%;
-      margin: auto;
+      margin: auto;   
+    
     }
+  
   
     #contact{
       flex-direction: column;
